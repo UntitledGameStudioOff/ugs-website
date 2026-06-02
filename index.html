@@ -153,20 +153,29 @@ section{
 /* PROJECT */
 
 .project{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    max-width:900px;
+    margin:auto;
 }
 
 .project-image{
     height:400px;
+    width:100%;
+    max-width:600px;
     border-radius:10px;
     background:
     linear-gradient(rgba(0,0,0,.4),
     rgba(0,0,0,.7)),
-    url("https://images.unsplash.com/photo-1517420879524-86d64ac2f339?q=80&w=1500");
+    #1a1a1a;
     background-size:cover;
     background-position:center;
+}
+
+.project-info{
+    width:100%;
+    max-width:600px;
 }
 
 .project-info ul{
@@ -194,10 +203,6 @@ footer{
 /* RESPONSIVE */
 
 @media(max-width:900px){
-
-.project{
-    grid-template-columns:1fr;
-}
 
 .hero h1{
     font-size:3rem;
